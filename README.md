@@ -2,7 +2,7 @@
 Developer can use Empty TextView or ImageView while data list is Zero in the RecyclerViewAdapter
 
 1) Use below link to download  .aar file, add this library to libs folder and import to project
-   link:
+   link: https://github.com/patilvg89/RecyclerviewEmptyViewSupport/blob/master/recyclerview-release.aar
 
 2) Add below layout to your xml
 
