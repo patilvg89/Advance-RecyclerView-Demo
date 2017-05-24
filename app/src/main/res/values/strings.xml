@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerViewSupportEmptyTextImage</string>
+    <string name="title_activity_basic_adapter">BasicAdapterActivity</string>
 </resources>
