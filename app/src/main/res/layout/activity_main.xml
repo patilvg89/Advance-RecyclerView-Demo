@@ -36,6 +36,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="adapterWithDefaultImageInJava"
+            android:text="Adapter with Default Image in JAVA" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:onClick="adapterWithImageInXml"
             android:text="Adapter with Image attr in XML" />
 

@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
         openActivity("adapterWithImageInXml");
     }
 
+    public void adapterWithDefaultImageInJava(View view) {
+        openActivity("adapterWithDefaultImageInJava");
+    }
+
     private void openActivity(String type) {
         startActivity(new Intent(this, BasicAdapterActivity.class).putExtra("TYPE", type));
     }

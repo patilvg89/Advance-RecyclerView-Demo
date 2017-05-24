@@ -54,6 +54,9 @@ public class BasicAdapterActivity extends AppCompatActivity {
                 //To set height/width programmatically UNIT is DP
                 //recyclerview1.setAdapterWithEmptyImageView(adapter, ContextCompat.getDrawable(this, R.mipmap.ic_launcher), 100, 100);
                 break;
+            case "adapterWithDefaultImageInJava":
+                recyclerview1.setAdapterWithEmptyImageView(adapter, null);
+                break;
             case "adapterWithImageInXml":
                 recyclerview1.setAdapter(adapter);
                 break;

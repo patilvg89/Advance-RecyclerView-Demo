@@ -1,8 +1,26 @@
 # RecyclerviewEmptyViewSupport
 Developer can use Empty TextView or ImageView while data list is Zero in the RecyclerViewAdapter
 
-1) Use below link to download  .aar file, add this library to libs folder and import to project
-   link: https://github.com/patilvg89/RecyclerviewEmptyViewSupport/blob/master/recyclerview-release.aar
+1) a) Use below link to download  .aar file, add this library to libs folder and import to project
+      link: https://github.com/patilvg89/RecyclerviewEmptyViewSupport/blob/master/recyclerview-release.aar
+
+
+   b) Copy below code to project level build.gradle
+
+       allprojects {
+           repositories {
+               jcenter()
+               flatDir {
+                   dirs 'libs'
+               }
+           }
+        }
+
+
+   c) Include library dependency in app level build.gradle as below
+      compile(name:'recyclerview-release', ext:'aar')
+
+
 
 2) Add below layout to your xml
 
