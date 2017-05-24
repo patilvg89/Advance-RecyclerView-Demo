@@ -18,16 +18,17 @@ Developer can use Empty TextView or ImageView while data list is Zero in the Rec
 
 
    c) Include library dependency in app level build.gradle as below
-      compile(name:'recyclerview-release', ext:'aar')
+    compile(name:'recyclerview-release', ext:'aar')
 
 
 
 2) Add below layout to your xml
 
+
     <com.virendra.view.RecyclerViewEmptySupport
-            android:id="@+id/recyclerview1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 3) Create Adapter and set Adapter to recyclerview1
 
