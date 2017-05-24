@@ -18,6 +18,7 @@ Developer can use Empty TextView or ImageView while data list is Zero in the Rec
          b)  recyclerview1.setAdapterWithEmptyTextView(adapter, "There are no record to show...");
          c)  recyclerview1.setAdapterWithEmptyImageView(adapter, ContextCompat.getDrawable(this, R.mipmap.ic_launcher));
          d)  recyclerview1.setAdapterWithEmptyImageView(adapter, ContextCompat.getDrawable(this, R.mipmap.ic_launcher), 100, 100); // unit is dp
+         e)  recyclerview1.setAdapterWithEmptyImageView(adapter, null); //To show library default image
 
 5) Empty Text and Image can be added in xml layout
     If your mentioned text and image in xml layout then ImageView has more priority than TextView
