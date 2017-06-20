@@ -42,4 +42,8 @@ public class MainActivity extends AppCompatActivity {
     private void openActivity(String type) {
         startActivity(new Intent(this, BasicAdapterActivity.class).putExtra("TYPE", type));
     }
+
+    public void pagination(View view) {
+        openActivity("pagination");
+    }
 }

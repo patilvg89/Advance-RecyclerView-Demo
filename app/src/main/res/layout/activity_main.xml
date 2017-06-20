@@ -45,6 +45,11 @@
             android:onClick="adapterWithImageInXml"
             android:text="Adapter with Image attr in XML" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="pagination"
+            android:text="RecyclerView With Pagination" />
 
     </LinearLayout>
 </ScrollView>
