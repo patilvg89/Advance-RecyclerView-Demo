@@ -61,5 +61,25 @@ Developer can use Empty TextView or ImageView while data list is Zero in the Rec
             app:empty_image_width="100dp" />
  
  
- 
+ 6) Recyclerview Pagination (Currently set Empty image/text not supported)
+     int visibleThreshold = 10; // visible items
+     int totalItemCount = 101;//value from  server response where server returns the total count for list
+     recyclerviewSupport.setPaginationAdapter(adapter1, visibleThreshold, totalItemCount, new RecyclerViewCallback() {
+     @Override
+     public void loadMoreItems(int pageNo) {
+         //do API call and get response
+         API_CALL(pageNo);
+         
+         //add response to list
+         list.addAll(...);
+         
+         //update adapter
+         recyclerviewSupport.updatePaginationAdapter(adapter1, list.size());
+     }
+
+     @Override
+     public void hasLoadedAllItems(boolean value) {
+         Log.d("TAG", "Reached to end");
+     }
+ });
  
